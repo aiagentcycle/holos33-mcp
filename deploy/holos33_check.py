@@ -36,7 +36,7 @@ HOST = "mcp.holos33.com"
 BASE = f"https://{HOST}"
 REGISTRY = "https://registry.modelcontextprotocol.io/v0.1/servers/com.holos33%2Fholos33/versions/latest"
 EXPECTED_TXT = (APP / "deploy" / "registry-txt.txt").read_text().strip()
-NEIGHBOURS = ["https://mcp.aiagentcycle.com/mcp", "https://mcp.goodnaturevibe.com/mcp", "https://catalog-mcp.goodnaturevibe.com/mcp"]
+NEIGHBOURS = ["https://mcp.aiagentcycle.com/mcp", "https://catalog-mcp.goodnaturevibe.com/mcp"]
 LOG_DIR = Path("/var/log/holos33-mcp")
 UA = "holos33-check/1.0"
 MAX_RELEASE_AGE_H = 12
@@ -149,7 +149,7 @@ def _txt():
 @check("5 vindbaar: Server Card, ai-catalog, llms.txt, llms-full.txt")
 def _discovery():
     out = []
-    for path, media in (("/mcp/server-card", "application/mcp-server-card+json"), ("/.well-known/ai-catalog.json", "application/ai-catalog+json"),
+    for path, media in (("/mcp/server-card", "application/mcp-server-card+json"), ("/.well-known/mcp/server-card.json", "application/mcp-server-card+json"), ("/.well-known/ai-catalog.json", "application/ai-catalog+json"),
                         ("/llms.txt", "text/plain"), ("/llms-full.txt", "text/plain")):
         status, headers, raw = http("GET", BASE + path)
         content_type = {k.lower(): v for k, v in headers.items()}.get("content-type", "")

@@ -8,7 +8,7 @@ AI agents can use it to answer questions about Holos33 with sourced, current fac
 
 - **Endpoint:** `https://mcp.holos33.com/mcp` (Streamable HTTP, no login, read-only)
 - **MCP Registry:** `com.holos33/holos33`
-- **Server Card:** <https://mcp.holos33.com/mcp/server-card>
+- **Server Card:** <https://mcp.holos33.com/.well-known/mcp/server-card.json> (also available at `/mcp/server-card`)
 - **For crawlers and LLMs:** [`llms.txt`](https://mcp.holos33.com/llms.txt), [`llms-full.txt`](https://mcp.holos33.com/llms-full.txt), Markdown per document under `/md/`
 
 ## Connect

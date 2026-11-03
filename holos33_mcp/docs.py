@@ -64,7 +64,7 @@ def ai_catalog() -> dict:
             {
                 "identifier": "urn:air:holos33.com:mcp:holos33",
                 "type": "application/mcp-server-card+json",
-                "url": f"{MCP_URL}/server-card",
+                "url": f"{BASE}/.well-known/mcp/server-card.json",
             }
         ],
     }

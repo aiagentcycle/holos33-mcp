@@ -53,9 +53,15 @@ def test_server_card_and_catalog(content):
         assert "tools" not in card
         assert http.get("/mcp/server-card", headers={"if-none-match": r.headers["etag"]}).status_code == 304
         assert http.options("/mcp/server-card").status_code == 204
+        well_known = http.get("/.well-known/mcp/server-card.json", headers={"origin": "https://evil.example"})
+        assert well_known.status_code == 200
+        assert well_known.headers["content-type"].startswith("application/mcp-server-card+json")
+        assert well_known.headers["access-control-allow-origin"] == "*"
+        assert well_known.json() == r.json()
+        assert http.options("/.well-known/mcp/server-card.json").status_code == 204
         catalog = http.get("/.well-known/ai-catalog.json")
         assert catalog.headers["content-type"].startswith("application/ai-catalog+json")
-        assert catalog.json()["entries"][0]["url"] == "https://mcp.holos33.com/mcp/server-card"
+        assert catalog.json()["entries"][0]["url"] == "https://mcp.holos33.com/.well-known/mcp/server-card.json"
         # Het MCP-endpoint zelf blijft de Origin-check houden.
         assert http.post("/mcp", headers={"origin": "https://evil.example"}, json={}).status_code == 403
 

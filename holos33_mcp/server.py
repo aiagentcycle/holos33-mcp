@@ -766,6 +766,7 @@ def doc_routes(snapshot: Snapshot):
     return [
         Route("/icon-512.png", icon("icon-512.png"), methods=["GET", "HEAD"]),
         Route("/icon-192.png", icon("icon-192.png"), methods=["GET", "HEAD"]),
+        Route("/.well-known/mcp/server-card.json", static_json(docs.server_card(), "application/mcp-server-card+json"), methods=["GET", "HEAD", "OPTIONS"]),
         Route("/mcp/server-card", static_json(docs.server_card(), "application/mcp-server-card+json"), methods=["GET", "HEAD", "OPTIONS"]),
         Route("/.well-known/ai-catalog.json", static_json(docs.ai_catalog(), "application/ai-catalog+json"), methods=["GET", "HEAD", "OPTIONS"]),
         Route("/llms.txt", llms_txt, methods=["GET", "HEAD"]),
