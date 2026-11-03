@@ -1,6 +1,8 @@
 """Dagelijkse controle van de harde regel (docs/HARDE-REGEL.md). Leest alleen, herstelt niets.
 
 Exitcode 1 bij één rode check: dan staat holos33-check.service op failed en toont de MOTD het.
+Nummering = regelnummer in HARDE-REGEL.md (regel 1 en 6 hebben elk twee checks), dus 11 checks voor regels 1 t/m 9;
+8 (release-inhoud) en 9 (versies gelijk, gedeeld met aac-check via /opt/mcp-checks/checklib.py) staan daar nog niet.
 Uitkomst: /var/log/holos33-mcp/checks.jsonl (geschiedenis) en check-status.txt (laatste run, leesbaar).
 """
 
@@ -24,6 +26,11 @@ sys.path.insert(0, str(APP))
 from holos33_mcp import __version__  # noqa: E402
 from holos33_mcp.docs import MCP_URL, SERVER_NAME  # noqa: E402
 from sync.holos33_sync import MIN_PAGE_WORDS, MIN_PAGE_WORDS_KINDS  # noqa: E402
+
+# Gedeelde versie-vergelijking (ook in aac-check en catalog-check); pas na de app-imports, zodat niets daaruit
+# een module van de app overschaduwt.
+sys.path.insert(0, "/opt/mcp-checks")
+import checklib  # noqa: E402
 
 HOST = "mcp.holos33.com"
 BASE = f"https://{HOST}"
@@ -209,6 +216,16 @@ def _release_content():
     if thin or unknown:
         raise RuntimeError(f"bijna leeg: {', '.join(thin[:5]) or '-'}; onbekend: {', '.join(unknown[:5]) or '-'}; zie manifest.json")
     return f"{len(warnings)} sync-warnings (regels toegepast), kernpagina's >= {MIN_PAGE_WORDS} woorden"
+
+
+@check("9 versies gelijk: healthz = server.json in /opt/mcp-checks = Registry = GitHub-tag")
+def _versions():
+    # Vangt de vergeten export of push na een deploy; de oplossing is altijd /opt/mcp-checks/release.sh holos33.
+    # GitHub onbereikbaar is geen fout van deze server: groen met een opmerking.
+    level, text = checklib.version_report(checklib.load_manifest("holos33"))
+    if level == "FOUT":
+        raise RuntimeError(text)
+    return text
 
 
 def main() -> int:
