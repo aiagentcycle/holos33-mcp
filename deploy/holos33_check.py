@@ -29,7 +29,7 @@ HOST = "mcp.holos33.com"
 BASE = f"https://{HOST}"
 REGISTRY = "https://registry.modelcontextprotocol.io/v0.1/servers/com.holos33%2Fholos33/versions/latest"
 EXPECTED_TXT = (APP / "deploy" / "registry-txt.txt").read_text().strip()
-NEIGHBOURS = ["https://mcp.aiagentcycle.com/mcp", "https://mcp.goodnaturevibe.com/mcp"]
+NEIGHBOURS = ["https://mcp.aiagentcycle.com/mcp", "https://mcp.goodnaturevibe.com/mcp", "https://catalog-mcp.goodnaturevibe.com/mcp"]
 LOG_DIR = Path("/var/log/holos33-mcp")
 UA = "holos33-check/1.0"
 MAX_RELEASE_AGE_H = 12
@@ -179,7 +179,7 @@ def _transport():
     return f"405/403 ok, {codes.count(429)} van 40 begrensd"
 
 
-@check("7 buren: AAC en GNV antwoorden")
+@check("7 buren: AAC, GNV en de GNV-catalogus antwoorden")
 def _neighbours():
     out = []
     time.sleep(2)
