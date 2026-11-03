@@ -1,0 +1,13 @@
+{
+  "identifier": "aiagentcycle-holos33",
+  "name": "Holos33",
+  "version": "1.0.2",
+  "author": "Holos33",
+  "authorUrl": "https://github.com/aiagentcycle",
+  "category": "productivity",
+  "cloudEndpoint": "https://mcp.holos33.com/mcp",
+  "description": "Read-only facts about Holos33, an EU privacy-first wellbeing platform, including modules, Early Access, privacy and public contact information.",
+  "homepage": "https://github.com/aiagentcycle/holos33-mcp",
+  "icon": "https://mcp.holos33.com/icon-512.png",
+  "tags": ["wellbeing", "knowledge", "privacy", "read-only"]
+}
