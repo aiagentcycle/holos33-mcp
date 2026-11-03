@@ -1,0 +1,28 @@
+[Unit]
+Description=Holos33 MCP: dagelijkse controle van de harde regel (docs/HARDE-REGEL.md)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=holos33sync
+Group=holos33
+WorkingDirectory=/opt/holos33-mcp/app
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=HOME=/tmp
+ExecStart=/opt/holos33-mcp/app/.venv/bin/python /opt/holos33-mcp/app/deploy/holos33_check.py
+TimeoutStartSec=5min
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+CapabilityBoundingSet=
+UMask=0022
+ReadWritePaths=/var/log/holos33-mcp

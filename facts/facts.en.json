@@ -1,0 +1,93 @@
+{
+ "facts_version": "2026-10-31.1",
+ "lang": "en",
+ "basis": "Early Access Terms v1.0 (effective 2026-09-05), privacy policy, sub-processor register and Organization data on holos33.com. Where pages disagree, these documents win.",
+ "brand": "Holos33",
+ "what_it_is": "Holos33 is a privacy-first wellbeing platform built in the EU. It combines an AI coach, optional biofeedback from wearables, a daily check-in with a wellbeing score, and six evidence-informed modules: stress, sleep, breathing, hypnosis, nutrition and movement.",
+ "status": {
+  "phase": "early_access_waitlist",
+  "summary": "Holos33 has not launched commercially yet. People join a waitlist and are admitted in small groups to free Early Access. No public launch date has been announced.",
+  "launch_date": null,
+  "app_store_links": []
+ },
+ "entity": {
+  "trade_name": "Holos33",
+  "legal_name": "Good Nature Vibe B.V.",
+  "kvk": "95865101",
+  "address": "Houtwal 29B, 8431 EX Oosterwolde, the Netherlands",
+  "country": "NL",
+  "founder": "Stefan de Graaf",
+  "privacy_email": "privacy@holos33.com"
+ },
+ "audiences": [
+  {"key": "individuals", "summary": "Adults (18+) in the EU/EEA who want support with stress, sleep, energy and habits. Join the free Early Access waitlist.", "url": "https://holos33.com/en/pricing/"},
+  {"key": "professionals", "summary": "Coaches, therapists, lifestyle coaches, yoga and mindfulness teachers and similar professionals can register partner interest. A professional dashboard and a white-label option are in development.", "url": "https://holos33.com/en/for-professionals/"},
+  {"key": "businesses", "summary": "Organisations can request a 30-minute demo. Options are a 6-week pilot, a quarterly programme or an annual licence, with anonymous group reports for at least 10 participants. Prices are given on request.", "url": "https://holos33.com/en/for-businesses/"},
+  {"key": "research", "summary": "Research partners can collaborate on digital wellbeing studies with privacy safeguards.", "url": "https://holos33.com/en/research-partnerships/"},
+  {"key": "investors", "summary": "Information for investors.", "url": "https://holos33.com/en/investors/"}
+ ],
+ "not_for": [
+  "People under 18.",
+  "People living outside the EU/EEA.",
+  "Diagnosis or treatment of medical or psychological conditions. Holos33 is not a medical device and does not replace a doctor, psychologist or therapist.",
+  "Acute crisis. Call 112 in the EU, or 113 Suicide Prevention in the Netherlands on 0800-0113."
+ ],
+ "eligibility": {"min_age": 18, "regions": ["EU", "EEA"], "accounts_per_person": 1},
+ "access": {
+  "early_access_price_eur": 0,
+  "credit_card_required": false,
+  "valid_through": "2027-03-31",
+  "valid_through_note": "Early Access runs until 2027-03-31 at the latest and may be extended. Ending earlier requires at least 30 days' notice.",
+  "fair_use": [
+   "All 6 modules, daily check-in, wellbeing score and knowledge base: unlimited.",
+   "AI coach: 150 messages per month.",
+   "Wearable sync: once per day, up to 90 days of history.",
+   "Voice and transcription (once available): 60 minutes per month.",
+   "Notes and journal: 250 MB.",
+   "Data export and account deletion: always, free."
+  ],
+  "paid_plans": "Paid personal plans (phase 2) have not been priced yet. Nobody is moved onto a paid plan automatically.",
+  "founding_member_benefit": "Everyone with an active Early Access account at the end date gets 40% off the personal plan for 12 months. The first 250 who complete both feedback rounds get a free Core account for at least 24 months.",
+  "business_pricing": "On request after a demo.",
+  "waitlist_url": "https://holos33.com/en/pricing/",
+  "terms_url": "https://holos33.com/en/early-access-terms/"
+ },
+ "wearables": {
+  "supported": ["Oura", "Fitbit", "Apple Health", "Garmin"],
+  "required": false,
+  "note": "This list comes from the Early Access Terms. Some other pages mention more integrations; treat those as planned until the terms list them."
+ },
+ "languages": ["nl", "en"],
+ "privacy": {
+  "summary": "Data is stored on servers inside the EU, never sold and never used for advertising. Health-related data is processed only with explicit consent (GDPR Art. 9(2)(a)). Employers never see individual data.",
+  "privacy_url": "https://holos33.com/en/privacy-policy/",
+  "sub_processors_url": "https://holos33.com/en/sub-processors/",
+  "data_management_url": "https://holos33.com/en/data-management/",
+  "trust_center_url": "https://holos33.com/en/trust-center/",
+  "contact_email": "privacy@holos33.com"
+ },
+ "links": {
+  "website": "https://holos33.com/en/",
+  "waitlist": "https://holos33.com/en/pricing/",
+  "business_demo": "https://holos33.com/en/for-businesses/",
+  "partner_interest": "https://holos33.com/en/for-professionals/",
+  "contact": "https://holos33.com/en/contact/",
+  "faq": "https://holos33.com/en/faq/",
+  "science": "https://holos33.com/en/science/",
+  "knowledge_base": "https://holos33.com/en/knowledge-base/",
+  "terms": "https://holos33.com/en/terms-and-conditions/",
+  "disclaimer": "https://holos33.com/en/disclaimer/"
+ },
+ "disclaimer": "Holos33 supports wellbeing and relaxation. It is not a medical device, does not diagnose, and does not replace a doctor, psychologist or therapist.",
+ "content_rules": {
+  "removed_notice": "[Passage removed by the Holos33 MCP server: it conflicts with the current facts or makes an unsupported claim. See get_overview and get_access_and_pricing.]",
+  "blocked_patterns": [
+   {"pattern": "\\bfree trial\\b|\\btrial period\\b|\\b7[ -]day trial|\\bfree for 7 days\\b|\\bproefperiode\\b|7 dagen (lang )?gratis|gratis 7 dagen", "reason": "free-trial wording conflicts with free Early Access", "scope": ["faq", "pages", "modules"]},
+   {"pattern": "monthly (or|and) annual subscription|annual subscription|monthly subscription|maandabonnement|jaarabonnement", "reason": "subscription pricing has not been set", "scope": ["faq", "pages", "modules"]},
+   {"pattern": "\\biDEAL\\b|\\bPayPal\\b|refund for unused|SEPA transfer", "reason": "no payment is taken during Early Access", "scope": ["faq", "pages", "modules"]},
+   {"pattern": "Holos33 B\\.V\\.|from Amsterdam|vanuit Amsterdam", "reason": "legal entity is Good Nature Vibe B.V., Oosterwolde", "scope": ["faq", "pages", "modules"]},
+   {"pattern": "~?\\s?14\\s?%|\\b3\\s?[×x]\\s?(more |meer )?(retention|retentie)|500\\+", "reason": "unsupported performance claim", "scope": ["pages", "modules"]},
+   {"pattern": "proven effect|bewezen effect|scientifically validated|wetenschappelijk gevalideerd", "reason": "unsupported efficacy claim", "scope": ["pages", "modules"]}
+  ]
+ }
+}

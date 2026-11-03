@@ -1,0 +1,6 @@
+#!/bin/sh
+# Toont bij elke SSH-login de laatste uitkomst van de harde-regelcontrole van de holos33-MCP.
+F=/var/log/holos33-mcp/check-status.txt
+[ -r "$F" ] || { echo "holos33-check: nog geen uitkomst"; exit 0; }
+head -n 1 "$F"
+grep -E "^  FOUT|Harde regel" "$F" || true

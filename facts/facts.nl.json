@@ -1,0 +1,93 @@
+{
+ "facts_version": "2026-10-31.1",
+ "lang": "nl",
+ "basis": "Voorwaarden Early Access v1.0 (geldig vanaf 2026-09-05), privacybeleid, sub-verwerkersregister en organisatiegegevens op holos33.com. Waar pagina's elkaar tegenspreken, gaan deze documenten voor.",
+ "brand": "Holos33",
+ "what_it_is": "Holos33 is een privacy-first welzijnsplatform, gebouwd in de EU. Het combineert een AI-coach, optionele biofeedback via wearables, een dagelijkse check-in met welzijnsscore en zes evidence-informed modules: stress, slaap, ademhaling, hypnose, voeding en beweging.",
+ "status": {
+  "phase": "early_access_waitlist",
+  "summary": "Holos33 is nog niet commercieel gelanceerd. Mensen melden zich aan voor een wachtlijst en krijgen in kleine groepen gratis Early Access. Er is geen publieke lanceringsdatum.",
+  "launch_date": null,
+  "app_store_links": []
+ },
+ "entity": {
+  "trade_name": "Holos33",
+  "legal_name": "Good Nature Vibe B.V.",
+  "kvk": "95865101",
+  "address": "Houtwal 29B, 8431 EX Oosterwolde, Nederland",
+  "country": "NL",
+  "founder": "Stefan de Graaf",
+  "privacy_email": "privacy@holos33.com"
+ },
+ "audiences": [
+  {"key": "individuals", "summary": "Volwassenen (18+) in de EU/EER die steun willen bij stress, slaap, energie en gewoontes. Aanmelden voor de gratis Early Access-wachtlijst.", "url": "https://holos33.com/nl/pricing/"},
+  {"key": "professionals", "summary": "Coaches, therapeuten, leefstijlcoaches, yoga- en mindfulnessdocenten en vergelijkbare professionals kunnen partnerinteresse aangeven. Een professioneel dashboard en een white-label-optie zijn in ontwikkeling.", "url": "https://holos33.com/nl/voor-professionals/"},
+  {"key": "businesses", "summary": "Organisaties kunnen een demo van 30 minuten aanvragen. Opties zijn een pilot van 6 weken, een kwartaalprogramma of een jaarlicentie, met anonieme groepsrapportages vanaf 10 deelnemers. Prijzen op aanvraag.", "url": "https://holos33.com/nl/voor-bedrijven/"},
+  {"key": "research", "summary": "Onderzoekspartners kunnen samenwerken aan studies naar digitaal welzijn, met privacywaarborgen.", "url": "https://holos33.com/nl/research-partnerships/"},
+  {"key": "investors", "summary": "Informatie voor investeerders.", "url": "https://holos33.com/nl/investeerders/"}
+ ],
+ "not_for": [
+  "Mensen jonger dan 18.",
+  "Mensen die buiten de EU/EER wonen.",
+  "Diagnose of behandeling van medische of psychische klachten. Holos33 is geen medisch hulpmiddel en vervangt geen arts, psycholoog of therapeut.",
+  "Acute crisis. Bel 112, of 113 Zelfmoordpreventie op 0800-0113."
+ ],
+ "eligibility": {"min_age": 18, "regions": ["EU", "EER"], "accounts_per_person": 1},
+ "access": {
+  "early_access_price_eur": 0,
+  "credit_card_required": false,
+  "valid_through": "2027-03-31",
+  "valid_through_note": "Early Access loopt uiterlijk tot 2027-03-31 en kan worden verlengd. Eerder stoppen kondigt Holos33 minstens 30 dagen vooraf aan.",
+  "fair_use": [
+   "Alle 6 modules, dagelijkse check-in, welzijnsscore en kennisbank: onbeperkt.",
+   "AI-coach: 150 berichten per maand.",
+   "Wearable-sync: één keer per dag, tot 90 dagen geschiedenis.",
+   "Spraak en transcriptie (zodra beschikbaar): 60 minuten per maand.",
+   "Notities en dagboek: 250 MB.",
+   "Data exporteren en account verwijderen: altijd, gratis."
+  ],
+  "paid_plans": "Betaalde persoonlijke abonnementen (fase 2) hebben nog geen prijs. Niemand wordt automatisch op een betaald plan gezet.",
+  "founding_member_benefit": "Iedereen met een actief Early Access-account op de einddatum krijgt 12 maanden 40% korting op het persoonlijke plan. De eerste 250 die beide feedbackrondes afronden krijgen minstens 24 maanden een gratis Core-account.",
+  "business_pricing": "Op aanvraag na een demo.",
+  "waitlist_url": "https://holos33.com/nl/pricing/",
+  "terms_url": "https://holos33.com/nl/voorwaarden-early-access/"
+ },
+ "wearables": {
+  "supported": ["Oura", "Fitbit", "Apple Health", "Garmin"],
+  "required": false,
+  "note": "Deze lijst komt uit de Voorwaarden Early Access. Sommige andere pagina's noemen meer koppelingen; zie die als gepland zolang de voorwaarden ze niet noemen."
+ },
+ "languages": ["nl", "en"],
+ "privacy": {
+  "summary": "Data staat op servers binnen de EU, wordt nooit verkocht en nooit voor advertenties gebruikt. Gezondheidsgerelateerde data wordt alleen met uitdrukkelijke toestemming verwerkt (AVG art. 9 lid 2 sub a). Werkgevers zien nooit individuele data.",
+  "privacy_url": "https://holos33.com/nl/privacybeleid/",
+  "sub_processors_url": "https://holos33.com/nl/sub-verwerkers/",
+  "data_management_url": "https://holos33.com/nl/gegevensbeheer/",
+  "trust_center_url": "https://holos33.com/nl/trust-center/",
+  "contact_email": "privacy@holos33.com"
+ },
+ "links": {
+  "website": "https://holos33.com/nl/",
+  "waitlist": "https://holos33.com/nl/pricing/",
+  "business_demo": "https://holos33.com/nl/voor-bedrijven/",
+  "partner_interest": "https://holos33.com/nl/voor-professionals/",
+  "contact": "https://holos33.com/nl/contact/",
+  "faq": "https://holos33.com/nl/faq/",
+  "science": "https://holos33.com/nl/wetenschap/",
+  "knowledge_base": "https://holos33.com/nl/kennisbank/",
+  "terms": "https://holos33.com/nl/voorwaarden/",
+  "disclaimer": "https://holos33.com/nl/disclaimer/"
+ },
+ "disclaimer": "Holos33 ondersteunt welzijn en ontspanning. Het is geen medisch hulpmiddel, stelt geen diagnoses en vervangt geen arts, psycholoog of therapeut.",
+ "content_rules": {
+  "removed_notice": "[Passage weggelaten door de Holos33 MCP-server: in strijd met de actuele feiten of een niet onderbouwde claim. Zie get_overview en get_access_and_pricing.]",
+  "blocked_patterns": [
+   {"pattern": "\\bfree trial\\b|\\btrial period\\b|\\b7[ -]day trial|\\bfree for 7 days\\b|\\bproefperiode\\b|7 dagen (lang )?gratis|gratis 7 dagen", "reason": "proefperiode in strijd met gratis Early Access", "scope": ["faq", "pages", "modules"]},
+   {"pattern": "monthly (or|and) annual subscription|annual subscription|monthly subscription|maandabonnement|jaarabonnement|maand- of jaarabonnement", "reason": "abonnementsprijzen zijn nog niet vastgesteld", "scope": ["faq", "pages", "modules"]},
+   {"pattern": "\\biDEAL\\b|\\bPayPal\\b|refund for unused|SEPA-overboeking|SEPA transfer|ongebruikte maanden", "reason": "tijdens Early Access wordt niet betaald", "scope": ["faq", "pages", "modules"]},
+   {"pattern": "Holos33 B\\.V\\.|from Amsterdam|vanuit Amsterdam", "reason": "juridische entiteit is Good Nature Vibe B.V., Oosterwolde", "scope": ["faq", "pages", "modules"]},
+   {"pattern": "~?\\s?14\\s?%|\\b3\\s?[×x]\\s?(more |meer )?(retention|retentie)|500\\+", "reason": "niet onderbouwde prestatieclaim", "scope": ["pages", "modules"]},
+   {"pattern": "proven effect|bewezen effect|scientifically validated|wetenschappelijk gevalideerd", "reason": "niet onderbouwde effectclaim", "scope": ["pages", "modules"]}
+  ]
+ }
+}

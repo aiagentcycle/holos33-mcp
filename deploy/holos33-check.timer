@@ -1,0 +1,11 @@
+[Unit]
+Description=Holos33 MCP: harde regel elke dag controleren
+
+[Timer]
+OnCalendar=*-*-* 07:15
+OnBootSec=15min
+RandomizedDelaySec=10min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
