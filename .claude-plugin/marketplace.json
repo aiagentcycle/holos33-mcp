@@ -1,0 +1,15 @@
+{
+  "name": "holos33-plugins",
+  "description": "Official Holos33 plugin for source-linked public wellbeing information.",
+  "owner": {
+    "name": "Holos33",
+    "email": "aiagentcycle@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "holos33-mcp",
+      "source": "./",
+      "description": "Read-only, source-linked public Holos33 knowledge through eleven hosted MCP tools."
+    }
+  ]
+}

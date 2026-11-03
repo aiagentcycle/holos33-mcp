@@ -1,0 +1,24 @@
+{
+  "name": "holos33-mcp",
+  "description": "Read-only, source-linked public Holos33 knowledge through eleven hosted MCP tools.",
+  "version": "1.0.2",
+  "author": {
+    "name": "Holos33",
+    "email": "aiagentcycle@gmail.com"
+  },
+  "homepage": "https://holos33.com",
+  "repository": "https://github.com/aiagentcycle/holos33-mcp",
+  "icon": "holos33_mcp/static/icon-512.png",
+  "privacyPolicyUrl": "https://holos33.com/nl/privacybeleid/",
+  "supportUrl": "https://holos33.com/nl/contact/",
+  "documentationUrl": "https://github.com/aiagentcycle/holos33-mcp#readme",
+  "termsOfServiceUrl": "https://holos33.com/nl/voorwaarden/",
+  "license": "MIT",
+  "keywords": [
+    "holos33",
+    "wellbeing",
+    "knowledge",
+    "read-only",
+    "mcp"
+  ]
+}

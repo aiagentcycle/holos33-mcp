@@ -1,0 +1,12 @@
+{
+  "name": "holos33-mcp",
+  "description": "Read-only, source-linked public Holos33 knowledge through eleven hosted MCP tools.",
+  "version": "1.0.2",
+  "author": {
+    "name": "Holos33",
+    "email": "aiagentcycle@gmail.com"
+  },
+  "homepage": "https://holos33.com",
+  "repository": "https://github.com/aiagentcycle/holos33-mcp",
+  "license": "MIT"
+}
