@@ -1,0 +1,12 @@
+{
+  "name": "holos33",
+  "version": "1.0.2",
+  "description": "Read-only sourced information about Holos33, its modules, privacy, access and public documentation.",
+  "mcpServers": {
+    "holos33": {
+      "httpUrl": "https://mcp.holos33.com/mcp",
+      "timeout": 30000,
+      "description": "Public read-only Holos33 knowledge server."
+    }
+  }
+}
