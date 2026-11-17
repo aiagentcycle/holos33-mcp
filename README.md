@@ -1,5 +1,6 @@
 # Holos33 MCP server
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/aiagentcycle-holos33-mcp-1wawn5?v=e2810b16247bda7770bedfb7da122edf)](https://m8ven.ai/mcp/aiagentcycle-holos33-mcp-1wawn5?s=readme)
 [![mcptry](https://mcptry.com/badge/com.holos33/holos33)](https://mcptry.com/servers/com.holos33/holos33)
 
 Read-only [Model Context Protocol](https://modelcontextprotocol.io) server for [holos33.com](https://holos33.com), an EU, privacy-first wellbeing platform that combines six modules (stress regulation, sleep and recovery, breathing and relaxation, movement and vitality, nutrition and rhythm, hypnosis and mindset) with HRV biofeedback and an AI coach.
